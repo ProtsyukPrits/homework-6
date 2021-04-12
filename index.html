@@ -37,7 +37,7 @@
 
             <ul class="top-contacts">
                 <li class="item-top-contacts">
-                    <a href="mailto:info@devstudio.com" class="contacts-head-hover contacts-info">
+                    <a href="mailto:info@devstudio.com" class="contacts-head contacts-info">
                         <svg class="contacts-icons" width="16px" height="12px">
                             <use href="./images/icons.svg#mail"></use>
                         </svg>
@@ -45,7 +45,7 @@
                 </li>
 
                 <li class="item-top-contacts">
-                    <a href="tel:+38 096 111 11 11" class="tel-head-hover contacts-info">
+                    <a href="tel:+38 096 111 11 11" class="contacts-head contacts-info">
                         <svg class="contacts-icons" width="10px" height="16px">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
@@ -435,7 +435,7 @@
         <div class="modal">
             <button class="modal-button" data-modal-close>
                 <svg class="modal-icons" width="11px" height="11px">
-                    <use href="./images/strite-fotos.svg#vector"></use>
+                    <use href="./images/icons.svg#vector"></use>
                 </svg>
             </button>
            <form class="form" autocomplete="off">
@@ -483,8 +483,14 @@
                         <textarea class="form-input text-area" name="form" rows="" placeholder="Введите текст" ></textarea>
                     </div>
                         <div class="check-box">
-                            <span class="check-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
-                                <input class="check-input form-check" type="checkbox" name="form" value=""/>
+                            <label for="checkbox" class="check-label">
+                                <input class="form-check" type="checkbox" id="checkbox" name="form" value="" />
+                                <svg class="transparent-check-box" width="16px" height="15px">
+                                    <use href="./images/icons.svg#check"></use>
+                                </svg>
+                                Соглашаюсь с рассылкой и принимаю <a class="rat" href="">Условия договора</a>
+                            </label>
+                               
                         </div>
                     <div class="form-button">
                         <button class="form-submit" type="submit">Отправить</button>
